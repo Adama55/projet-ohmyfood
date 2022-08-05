@@ -1,0 +1,14 @@
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./pages/accueil";
+@import "./pages/menu";
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: roboto, sans-serif;
+    margin: 0;
+}
