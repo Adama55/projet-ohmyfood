@@ -15,35 +15,43 @@
             <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
         </header>
         <main>
-            <section>
+            <section class="localiser">
+                <form action="#" class="localiser__form">
+                    <label for="local" class="localiser__form--label">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </label>
+                    <input type="text" name="local" id="local" placeholder="Paris, Belleville" class="localiser__form--imput">
+                </form>
+                <!--
                 <i class="fa-solid fa-location-dot"></i>
                 <h3>Paris, Belleville</h3>
+            -->
             </section>
-            <section>
-                <div>
-                    <h1> Réservez le menu qui vous convient</h1>
-                    <h3> Découvrez des restaurants d'excepton, séléctionnés par son soins.</h3>
+            <section class="reserver">
+                <div class="reserver--contenu">
+                    <h1 class="reserver--contenu__text-gras"> Réservez le menu qui vous convient</h1>
+                    <h3 class="reserver--contenu__text-fin" > Découvrez des restaurants d'excepton, séléctionnés par son soins.</h3>
                 </div>
-                <div>
+                <div class="btn-explore btn-explore--modification">
                     Explorer nos restaurants
                 </div>
             </section>
-            <section>
-                <div>
+            <section class="fonctionnement">
+                <div class="fonctionnement__fonctionnement-text">
                     <h1> Fonctionnement </h1>
                 </div>
-                <div>
-                    <h4>1</h4>
+                <div class="fonctionnement__menu-cartes">
+                    <h4 class="fonctionnement__menu-cartes__rond">1</h4>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <h3>Choisissez un restaurant</h3>
                 </div>
-                <div>
-                    <h4>2</h4>
+                <div class="fonctionnement__menu-cartes">
+                    <h4 class="fonctionnement__menu-cartes__rond">2</h4>
                     <i class="fa-solid fa-list-ul"></i>
                     <h3>Choisissez un restaurant</h3>
                 </div>
-                <div>
-                    <h4>3</h4>
+                <div class="fonctionnement__menu-cartes">
+                    <h4 class="fonctionnement__menu-cartes__rond">3</h4>
                     <i class="fa-solid fa-store"></i>
                     <h3>Choisissez un restaurant</h3>
                 </div>
