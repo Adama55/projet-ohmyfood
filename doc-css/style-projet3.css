@@ -2,11 +2,110 @@ header {
   display: flex;
   justify-content: center;
   padding: 10px;
-  box-shadow: 0px 1px 3px 0px black;
 }
 header img {
   width: 200;
   height: 40px;
+}
+
+.localiser {
+  background-color: #EAEAEA;
+  padding: 10px 0px 10px 80px;
+  box-shadow: inset 0px 6px 6px -px #c6c6c6;
+}
+.localiser__form {
+  display: flex;
+  justify-content: center;
+}
+.localiser__form--label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localiser__form--imput {
+  border-color: transparent;
+  background: #EAEAEA; /*#f6f6f6 ;*/
+  font-size: 120%;
+  font-weight: 700;
+  opacity: 0.6;
+  padding-left: 10px;
+}
+.localiser__form--imput:focus {
+  outline: none;
+}
+.localiser__form--imput::placeholder {
+  color: #000;
+}
+
+.reserver {
+  background-color: #faf9f9;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.reserver--contenu {
+  text-align: center;
+}
+.reserver--contenu__text-gras {
+  width: 80%;
+  font-size: 180%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.reserver--contenu__text-fin {
+  font-size: 110%;
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+.btn-explore {
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  box-shadow: 3px 3px 3px rgb(163, 161, 161);
+  font-size: 120%;
+  padding: 20px 15px;
+  border-radius: 50px;
+  border: none;
+  color: #FFF;
+}
+.btn-explore--modification {
+  display: flex;
+  margin: 40px auto;
+}
+.btn-explore:hover {
+  box-shadow: 3px 3px 3px #dfdddd;
+  cursor: pointer;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fonctionnement__fonctionnement-text {
+  margin: 20px;
+  font-size: 150%;
+}
+.fonctionnement__menu-cartes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6c6c6;
+  margin-bottom: 20px;
+}
+.fonctionnement__menu-cartes__rond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 5px;
 }
 
 * {
