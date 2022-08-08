@@ -3,43 +3,46 @@
     <head>
         <title> A la française </title>
         <meta name="A la française" content="restaurant" />
+
         <meta charset ="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="doc-css/style-projet3.css"/>
         <script src="https://kit.fontawesome.com/71d1a599f8.js" crossorigin="anonymous"></script>
+       
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
         integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
-    </head>
+     </head>
     <body>
         <header>
-            <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
-            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
+            <a href="./index.html" class="retour">
+                <i class="fa-solid fa-arrow-left "></i>
+            </a>
+            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="logo-menu" />
         </header>
         <main>
-            <section>
-                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la Française"/>
-            </section>
-            <section>
-                <div>
+            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la Française" class="image-menu"/>
+            
+            <section class="menu">
+                <div class="menu__titre">
                     <h1>A la française</h1>
                     <i class="fa-regular fa-heart"></i>
                 </div>
-                <div>
-                    ENTREES
+                <div class="menu__sous-titre">
+                    <div>ENTREES</div>
+                    <div class="menu__sous-titre__tiret"></div>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <h2>Tartare de poulpe acidulé</h2>
-                        </div>
-                        <div>
-                            <div> Aux zests d'orange</div>
-                            <div>25€</div>
-                        </div>
+                <div class="menu__contenu">
+                    <div class="menu__contenu--descrip">
+                        <h2>Tartare de poulpe acidulé</h2>
+                        <p> Aux zests d'orange</p>
                     </div>
-                    <div>
+                    <div class="menu__contenu--somme">
+                        25€
+                    </div>
+                    <div class="menu__contenu--icon">
                         <i class="fa-solid fa-circle-check"></i>
-                    </div>
+                    </div>                        
                 </div>
                 <div>
                     <div>
