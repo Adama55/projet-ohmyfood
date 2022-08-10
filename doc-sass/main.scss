@@ -3,6 +3,8 @@
 @import "./utils/mixins";
 @import "./pages/accueil";
 @import "./pages/menu";
+@import "./layout/header";
+@import "./components/button";
 
 *{
     box-sizing: border-box;
