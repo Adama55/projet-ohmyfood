@@ -63,3 +63,32 @@
         opacity: 1;
     }
   }
+
+  /** animation du menu**/
+  @keyframes proggression-affichage{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }    
+}
+
+/** animer nouveau**/
+@keyframes anim-nouveau {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

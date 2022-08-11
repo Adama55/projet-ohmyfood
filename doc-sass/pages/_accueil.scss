@@ -21,28 +21,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 0;
   }
   
   .container{
-    height: 30px;
-    width: 150px;;
+    width: 300px;;
     display: flex;
+    justify-content: space-evenly;
     position: relative;
-    top: 300px;
+    top: 400px;
     animation: chargement 4s forwards;
-    .circle{
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: $primary-color; 
-      animation: translater 500ms linear 0s infinite;
+    i{
+      color: $primary-color; 
+      animation: translater 0.6s linear 0.1s infinite;
       margin-right: 30px;
       
       &:first-child{
         position: absolute;
-        top:0;
-        left:0;
-        animation: agrandir 500ms linear 0ms infinite;
+        top: 0;
+        left: 0;
+        animation: agrandir 1000ms ease-in-out 0ms infinite;
       }
       
       &:last-child{
@@ -50,7 +48,7 @@
         top: 0;
         right: 0;
         margin-right: 0;
-        animation: agrandir 1000ms linear 0s infinite reverse;
+        animation: agrandir 1000ms ease-in-out 0s infinite;
       }
     }
   }
@@ -65,7 +63,7 @@
  } 
 
   .loading-home{
-    animation: accueil-chargement 5s forwards;
+    animation: accueil-chargement 4s forwards;
   }
   /******/
 
@@ -140,7 +138,13 @@
         width: 90%;
         margin-bottom: 30px;
         border-radius: 25px;
-        box-shadow: 3px 3px 15px 3px #dfdddd;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 3px 3px 15px 3px #dfdddd;
+            i{
+                color: $primary-color;
+            }            
+        }
         &__rond{
             display: flex;
             justify-content: center;
@@ -155,7 +159,7 @@
         &--icon{
             color: black;
             opacity: 0.6;
-            margin: 0 20px 0 20px;
+            margin: 0 20px 0 20px;            
         }
        
         &--text{
@@ -183,6 +187,10 @@
         background-color: #FFF;
         margin-bottom: 30px;
         border-radius: 25px;
+        &:hover{            
+                box-shadow: 3px 3px 15px 3px #dfdddd;
+                cursor: pointer;            
+            }
         a{
             text-decoration: none;
             color: #000;
@@ -197,6 +205,7 @@
                     background-color:$tertiary-color;
                     color: #06634c;
                     padding: 5px;
+                    animation: anim-nouveau 3s ease-in-out 1s infinite;
                 }
             }
         }
@@ -223,11 +232,16 @@
             }
             i{
                 font-size: 150%;
-                padding-right: 30px;
+                padding-right: 30px;               
+            
+            }
+            span{
                 &:hover{
-                    animation: icon-heart 1500ms ease forwards;
-                    cursor: pointer;
+                    i{
+                        animation: icon-heart 1500ms ease forwards;
+                        cursor: pointer;
                     }
+                }
             }
 
 
