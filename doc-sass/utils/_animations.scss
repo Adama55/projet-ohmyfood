@@ -1,0 +1,65 @@
+/*animer l'icon pour selection des choix*/
+@keyframes check-rotation{
+    0%{
+        transform: rotate(0deg);
+        margin: 0;
+    }
+    30%{
+        transform: rotate(0deg);
+    }
+    100%{
+        margin: 0 2rem;
+        transform: rotate(360deg);
+    }
+}
+/* animation icon coeur*/
+@keyframes icon-heart {
+    0% {
+      font-weight: 800;
+      background: linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.1;
+    }
+    100% {
+      font-weight: 800;
+      background: linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
+
+/** animation loading page d'accueil**/
+@keyframes agrandir {
+    0%{
+        transform: scale(0,0); 
+        opacity: 0;
+    }
+    
+    100% {
+        transform: scale(1,1); 
+        opacity: 1;
+    }
+  }
+  
+@keyframes translater {
+    0%{
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(50px)
+    }
+  }
+  
+  /* animation de process of loading*/
+@keyframes accueil-chargement {
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }

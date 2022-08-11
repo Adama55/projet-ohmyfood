@@ -5,12 +5,15 @@
         
     }
 
+    /****/
+
 .menu{
     display: flex;
     flex-direction: column;
     background-color: #EAEAEA;
     border-radius: 50px 50px 0 0 ;
     margin-top: -80px;
+    padding-bottom: 30px;
     width: 100%;
 
     &__titre{
@@ -20,20 +23,27 @@
         justify-content: space-between;
         height: 80px;
         border-radius: 50px 50px 0 0 ;
+        
         h1{
             padding-left: 30px;
             font-family: shrikand;
-            font-size: 40px;
+            font-size: 30px;
             font-weight:600;
         }
         i{
             padding-right: 15%;
+            padding-left: 2px;
             font-size: 150%;
-        }     
+           &:hover{
+            animation: icon-heart 1500ms ease forwards;
+            cursor: pointer;
+            }
+        }    
     }
     &__sous-titre{
         padding-top: 5px;
         padding-left: 5%;
+        margin-top: 30px;
         font-size: 120%;
         &__tiret{
             margin-top: 5px;
@@ -54,35 +64,55 @@
 
         &--descrip{
             padding-left: 5px;
+            width: 80%;
             h2{
                 font-size: 120%;
                 margin-bottom: 5px;
             }
             p{
-                font-size: 120%;
+                font-size: 100%;
                 margin-top: 0;
             }
         }
         &--somme{
             padding-top: 5%;
-            margin-right: 15px;
+            margin-right: -10px;
         }
         &--icon{
-            display: none;
+            width: 60px;
+            height: 95px;
+            background-color: $tertiary-color;
+            border-radius: 0 25px 25px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-origin: 100% 50%;
+            transform:  translateX(1%) scale(0,1);
+          
         }
         
         &:hover{
             cursor: pointer;
-            .menu__contenu--icon{
-                width: 60px;
-                height: 100%;
-                background-color: $tertiary-color;
-                border-radius: 0 25px 25px 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            transition: 0.5s ease;
+            box-shadow: 3px 3px 3px #979797;
+        }
+        &:hover .menu__contenu--descrip{
+            width: 70%;
+            transition: 0.5s;
+        }
+        &:hover .menu__contenu--icon{
+            transform:translateX(0%) scale(1);
+            transition: .5s ease;
+            
+            i{
+                animation: check-rotation 0.5s;
             }
         }
-
+    }
+    &--modification-button{
+        width: 50%;
+        margin: 30px 30px 30px 25% ;
+        text-align: center;
+    
     }
 }

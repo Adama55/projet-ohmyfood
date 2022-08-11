@@ -1,0 +1,17 @@
+.btn-explore{
+    &--modification{
+        display: flex;
+        margin: 40px auto;
+    }
+    @include gradient(to right bottom, $secondary-color,$primary-color);
+    box-shadow: 3px 3px 3px rgb(163, 161, 161);
+    font-size: 120%;
+    padding: 20px 15px;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    &:hover{
+       box-shadow: 3px 3px 3px #dfdddd;
+       cursor: pointer;
+    }
+}

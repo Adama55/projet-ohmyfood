@@ -3,14 +3,12 @@ header{
     justify-content: center;
     padding: 15px;
     img{
-        width: 200;
+        width: 200px;
         height: 40px;
     }
-    .logo-menu{
-        background-color: transparent;
-    }
     .retour{
-        width: 30%;
+        position: relative;
+        right: 20%;
         font-size: xx-large;
         i{ color: black;}
     }

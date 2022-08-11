@@ -1,4 +1,73 @@
 
+/**
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #c5cae9;
+  }**/
+  
+  .box{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container{
+    height: 30px;
+    width: 150px;;
+    display: flex;
+    position: relative;
+    top: 300px;
+    animation: chargement 4s forwards;
+    .circle{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $primary-color; 
+      animation: translater 500ms linear 0s infinite;
+      margin-right: 30px;
+      
+      &:first-child{
+        position: absolute;
+        top:0;
+        left:0;
+        animation: agrandir 500ms linear 0ms infinite;
+      }
+      
+      &:last-child{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+        animation: agrandir 1000ms linear 0s infinite reverse;
+      }
+    }
+  }
+
+  @keyframes chargement{
+    0%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+ } 
+
+  .loading-home{
+    animation: accueil-chargement 5s forwards;
+  }
+  /******/
 
 .localiser{
     background-color: #EAEAEA;
@@ -88,6 +157,7 @@
             opacity: 0.6;
             margin: 0 20px 0 20px;
         }
+       
         &--text{
             font-size: 90%;
             
@@ -154,7 +224,12 @@
             i{
                 font-size: 150%;
                 padding-right: 30px;
+                &:hover{
+                    animation: icon-heart 1500ms ease forwards;
+                    cursor: pointer;
+                    }
             }
+
 
         }
     }
