@@ -14,22 +14,12 @@
     </head>
     <body>
         <div class="box">
-            <div class="container background">
+            <div class="container">
                 <i class="fa-solid fa-forward"></i>
                 <i class="fa-solid fa-forward"></i>
                 <i class="fa-solid fa-forward"></i>
                 <i class="fa-solid fa-forward"></i>
                 <i class="fa-solid fa-forward"></i>
-              <!--  <span class="circle"><i class="fa-solid fa-forward"></i></span>
-                <span class="circle"><i class="fa-solid fa-forward"></i></span>
-                <span class="circle"><i class="fa-solid fa-forward"></i></span>
-                <span class="circle"><i class="fa-solid fa-forward"></i></span>
-                <span class="circle"><i class="fa-solid fa-forward"></i></span>
-                <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"><i class="fa-duotone fa-forward"></i></span>
-              <span class="circle"></span> -->
             </div>
         </div>
         <header class="loading-home">
@@ -38,10 +28,11 @@
         <main class="loading-home">
             <section class="localiser">
                 <form action="#" class="localiser__form">
-                    <label for="local" class="localiser__form--label">
+                    <label  class="localiser__form--label">
                         <i class="fa-solid fa-location-dot"></i>
                     </label>
-                    <input type="text" name="local" id="local" placeholder="Paris, Belleville" class="localiser__form--imput">
+                    <div class="localiser__form--imput"> Paris, Belleville</div>
+                    <!-- <input type="text" name="local" id="local" placeholder="Paris, Belleville" class="localiser__form--imput"> -->
                 </form>
             </section>
             <section class="reserver">
@@ -57,27 +48,90 @@
                 <div class="fonctionnement__fonctionnement-text">
                     <h1> Fonctionnement </h1>
                 </div>
-                <div class="fonctionnement__menu-cartes">
-                    <h4 class="fonctionnement__menu-cartes__rond">1</h4>
-                    <i class="fa-solid fa-mobile-screen-button fonctionnement__menu-cartes--icon"></i>
-                    <h3>Choisissez un restaurant</h3>
-                </div>
-                <div class="fonctionnement__menu-cartes">
-                    <h4 class="fonctionnement__menu-cartes__rond">2</h4>
-                    <i class="fa-solid fa-list-ul fonctionnement__menu-cartes--icon"></i>
-                    <h3>Choisissez un restaurant</h3>
-                </div>
-                <div class="fonctionnement__menu-cartes">
-                    <h4 class="fonctionnement__menu-cartes__rond">3</h4>
-                    <i class="fa-solid fa-store fonctionnement__menu-cartes--icon"></i>
-                    <h3>Choisissez un restaurant</h3>
+                <div class="width-adapter"> <!---->
+                    <div class="fonctionnement__menu-cartes">
+                        <h4 class="fonctionnement__menu-cartes__rond">1</h4>
+                        <i class="fa-solid fa-mobile-screen-button fonctionnement__menu-cartes--icon"></i>
+                        <h3>Choisissez un restaurant</h3>
+                    </div>
+                    <div class="fonctionnement__menu-cartes">
+                        <h4 class="fonctionnement__menu-cartes__rond">2</h4>
+                        <i class="fa-solid fa-list-ul fonctionnement__menu-cartes--icon"></i>
+                        <h3>Choisissez un restaurant</h3>
+                    </div>
+                    <div class="fonctionnement__menu-cartes">
+                        <h4 class="fonctionnement__menu-cartes__rond">3</h4>
+                        <i class="fa-solid fa-store fonctionnement__menu-cartes--icon"></i>
+                        <h3>Choisissez un restaurant</h3>
+                    </div>
                 </div>
             </section>
             <section class="cards">
                 <div class="cards__resto">
                     <h1> Restaurants </h1>
                 </div>
-                <div class="cards__figure">
+                
+                <div class="device-adapter">
+                    <div class="width-adapter">
+                    <div class="cards__figure">
+                        <a href="palette-gout.html">
+                            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Palette du gout" />
+                            <div class="cards__figure--nouveau"> <h4><p>Nouveau</p></h4></div>
+                            <div class="cards__figure__texicon">
+                                <div>
+                                    <h1>La palette du gout</h1>
+                                    <h3>Ménilmontant</h3>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i></span>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="cards__figure">
+                        <a href="note-enchantee.html">
+                            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Charonne" />
+                            <div class="cards__figure--nouveau"><h4><p>Nouveau</p></h4></div>
+                            <div class="cards__figure__texicon" >
+                                <div>
+                                    <h1>La note enchantée</h1>
+                                    <h3>Charonne</h3>
+                                </div>
+                                 <span><i class="fa-regular fa-heart"></i></span>
+                            </div>
+                        </a>   
+                    </div>
+                    </div>
+                    <div class="width-adapter">
+                    <div class="cards__figure">
+                        <a href="francaise.html">
+                        
+                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" />
+                            <div class="cards__figure__texicon">
+                                <div>
+                                    <h1>A la française</h1>
+                                    <h3>Cité Rouge</h3>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i></span>
+                            </div> 
+                        </a>   
+                    </div>
+                    <div class="cards__figure">
+                        <a href="delicieux.html">
+                           
+                            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Delice des sens" />
+                            <div class="cards__figure__texicon">
+                                <div>
+                                    <h1>Le délice des sens</h1>
+                                    <h3>Folie-Méricourt</h3>
+                                </div>
+                                <span><i class="fa-regular fa-heart"></i></span>
+                            </div>
+                        </a>    
+                    </div>
+                    </div>
+                </div>
+
+                <!-- 
+                <div class="cards__figure mobile">
                     <a href="palette-gout.html">
                         <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Palette du gout" />
                         <div class="cards__figure--nouveau"> <h4><p>Nouveau</p></h4></div>
@@ -128,7 +182,61 @@
                             <span><i class="fa-regular fa-heart"></i></span>
                         </div>
                     </a>    
+                </div>  --->
+
+                
+            <!-- <div class="cards__figure">
+                    <a href="palette-gout.html">
+                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Palette du gout" />
+                        <div class="cards__figure--nouveau"> <h4><p>Nouveau</p></h4></div>
+                        <div class="cards__figure__texicon">
+                            <div>
+                                <h1>La palette du gout</h1>
+                                <h3>Ménilmontant</h3>
+                            </div>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </a>    
                 </div>
+                <div class="cards__figure">
+                    <a href="note-enchantee.html">
+                        <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Charonne" />
+                        <div class="cards__figure--nouveau"><h4><p>Nouveau</p></h4></div>
+                        <div class="cards__figure__texicon" >
+                            <div>
+                                <h1>La note enchantée</h1>
+                                <h3>Charonne</h3>
+                            </div>
+                             <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </a>   
+                </div>
+                <div class="cards__figure">
+                    <a href="francaise.html">
+                    
+                        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" />
+                        <div class="cards__figure__texicon">
+                            <div>
+                                <h1>A la française</h1>
+                                <h3>Cité Rouge</h3>
+                            </div>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div> 
+                    </a>   
+                </div>
+                <div class="cards__figure">
+                    <a href="delicieux.html">
+                       
+                        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Delice des sens" />
+                        <div class="cards__figure__texicon">
+                            <div>
+                                <h1>Le délice des sens</h1>
+                                <h3>Folie-Méricourt</h3>
+                            </div>
+                            <span><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                    </a>    
+                </div> -->
             </section>           
         </main>
         <footer class="loading-home">
