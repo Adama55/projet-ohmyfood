@@ -10,6 +10,11 @@ header{
         position: relative;
         right: 20%;
         font-size: xx-large;
-        i{ color: black;}
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            right: 35%;            
+        }
+        i{ 
+            color: black;
+        }
     }
 }

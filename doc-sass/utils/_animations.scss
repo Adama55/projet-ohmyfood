@@ -41,7 +41,7 @@
         opacity: 1;
     }
   }
-  
+/**/  
 @keyframes translater {
     0%{
         transform: translateX(0)
@@ -50,8 +50,35 @@
         transform: translateX(50px)
     }
   }
+/**/
+@keyframes chargement{
+    0%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+ } 
+ /**/
+@keyframes anim-back{
+    0%{
+        opacity: 0.1;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0;
+    }
+ } 
   
-  /* animation de process of loading*/
+  /*  process of loading*/
 @keyframes accueil-chargement {
     0%{
         opacity: 0;

@@ -1,11 +1,11 @@
 .image-menu{
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
         
-    }
+}
 
-    /****/
+    /***/
 
 .menu{
     display: flex;
@@ -26,7 +26,7 @@
         
         h1{
             padding-left: 30px;
-            font-family: shrikand;
+            font-family: shrikhand;
             font-size: 30px;
             font-weight:600;
         }
@@ -61,16 +61,30 @@
         justify-content: space-between;
         align-items: center;
         height: 95px;
+        @media screen and (min-width: map-get($breakpoints, desktop)){
+            width: 100%;
+        }
         &--descrip{
+            display: flex;
+            flex-direction: column;
             padding-left: 5px;
+            margin-right: 20px;
             width: 80%;
             h2{
                 font-size: 120%;
                 margin-bottom: 5px;
+                padding-left: 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap ;
             }
             p{
                 font-size: 100%;
                 margin-top: 0;
+                padding-left: 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap ;
             }
         }
         &--somme{
@@ -78,6 +92,8 @@
             margin-right: -10px;
         }
         &--icon{
+            color: #fff;
+            font-size: 200%;
             width: 60px;
             height: 95px;
             background-color: $tertiary-color;
@@ -96,7 +112,7 @@
             box-shadow: 3px 3px 3px #979797;
         }
         &:hover .menu__contenu--descrip{
-            width: 70%;
+            width: 60%;
             transition: 0.5s;
         }
         &:hover .menu__contenu--icon{
@@ -112,7 +128,6 @@
         width: 50%;
         margin: 30px 30px 30px 25% ;
         text-align: center;
-    
     }
 }
 
@@ -143,24 +158,3 @@
     animation-delay: 0.10s;
         opacity: 0;
 }
-/*
-.menu__contenu:item1{
-    animation-delay: 0.3s;
-}
-.menu__contenu:item2{
-    animation-delay: 0.6s;
-}
-.menu__contenu:item3{
-    animation-delay: 0.9s;
-}*/
-
-/*
-.menu__contenu:nth-child(2){
-    animation-delay: 0.3s;
-}
-.menu__contenu:nth-child(3){
-    animation-delay: 0.6s;
-}
-.menu__contenu:nth-child(4){
-    animation-delay: 0.9s;
-}*/

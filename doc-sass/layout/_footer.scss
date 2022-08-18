@@ -1,0 +1,26 @@
+footer{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        padding-left: 35%;
+        font-size: 120%;
+    }
+    background-color: rgb(56, 56, 56);
+    opacity: 0.5;
+    color: #FFF;
+    
+    a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .footer__logo{
+        font-family: shrikhand;
+        letter-spacing: 3px;
+        margin-bottom: 0;
+        padding-top: 5px;
+    }
+    i{
+        margin-right: 5px;
+    }
+}

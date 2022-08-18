@@ -6,12 +6,6 @@
 @import "./layout/header";
 @import "./components/button";
 @import "./utils/animations";
-
-*{
-    box-sizing: border-box;
-    
-}
-body{
-    font-family: roboto, sans-serif;
-    margin: 0;
-}
+@import "./layout/footer";
+@import "./base/base";
+@import "./base/responsive-device";

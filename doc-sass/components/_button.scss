@@ -3,8 +3,7 @@
         display: flex;
         margin: 40px auto;
     }
-    @include gradient(to right bottom, $secondary-color,$primary-color);
-    box-shadow: 3px 3px 3px rgb(163, 161, 161);
+    @include gradient( 0deg, $primary-color,$secondary-color);
     font-size: 120%;
     padding: 20px 15px;
     border-radius: 50px;
@@ -13,5 +12,6 @@
     &:hover{
        box-shadow: 3px 3px 3px #dfdddd;
        cursor: pointer;
+       box-shadow: 3px 3px 3px rgb(163, 161, 161);
     }
 }
