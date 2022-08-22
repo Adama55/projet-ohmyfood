@@ -1,5 +1,5 @@
 # Projet 3 du parcours developpeur web chez OpenClassrooms: Dynamisez une page web avec des animations CSS
-## Compétences évaluée:
+## Compétences évaluées:
 - [ ] Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 - [ ] Mettre en œuvre des effets CSS graphiques avancés
 - [ ] Mettre en place son environnement Front-End
