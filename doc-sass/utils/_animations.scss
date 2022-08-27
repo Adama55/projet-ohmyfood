@@ -103,7 +103,7 @@
     }    
 }
 
-/** animer nouveau**/
+/** animer nouveau**/ /**
 @keyframes anim-nouveau {
     0% {
         opacity: 0;
@@ -119,3 +119,4 @@
         opacity: 1;
     }
 }
+animation: anim-nouveau 3s ease-in-out 1s infinite; **/

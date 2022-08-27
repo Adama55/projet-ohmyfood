@@ -10,8 +10,9 @@
     border: none;
     color: #FFF;
     &:hover{
-       box-shadow: 3px 3px 3px #dfdddd;
+       transition: 500ms;
        cursor: pointer;
        box-shadow: 3px 3px 3px rgb(163, 161, 161);
+       opacity: 0.8;
     }
 }

@@ -192,7 +192,6 @@
   color: #06634c;
   padding: 5px 15px 5px 15px;
   border-radius: 2px;
-  animation: anim-nouveau 3s ease-in-out 1s infinite;
 }
 .cards__figure img {
   height: 230px;
@@ -257,7 +256,7 @@
   font-weight: 600;
 }
 .menu__titre i {
-  padding-right: 10%;
+  padding-right: 8%;
   padding-left: 2px;
   font-size: 150%;
 }
@@ -424,9 +423,10 @@ header .retour i {
   margin: 40px auto;
 }
 .btn-explore:hover {
-  box-shadow: 3px 3px 3px #dfdddd;
+  transition: 500ms;
   cursor: pointer;
   box-shadow: 3px 3px 3px rgb(163, 161, 161);
+  opacity: 0.8;
 }
 
 /*animer l'icon pour selection des choix*/
@@ -529,21 +529,23 @@ header .retour i {
     transform: translateY(0);
   }
 }
-/** animer nouveau**/
+/** animer nouveau**/ /**
 @keyframes anim-nouveau {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.5;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
+animation: anim-nouveau 3s ease-in-out 1s infinite; **/
 footer {
   padding-top: 30px;
   padding-left: 30px;

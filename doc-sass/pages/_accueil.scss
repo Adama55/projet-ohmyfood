@@ -13,6 +13,7 @@
     position: relative;
     top: 400px;
     animation: chargement 4s forwards;
+
     .bille{
         width: 10px;
         height: 10px;
@@ -121,11 +122,12 @@
         margin-bottom: 30px;
         border-radius: 20px;
         box-shadow: 3px 3px 10px 3px #dfdddd;
+        
         &:hover{
             cursor: pointer;
             i{
                 color: $primary-color;
-                opacity: 1;
+                opacity:1;
             }            
         }
         &__rond{
@@ -146,8 +148,7 @@
         }
        
         &--text{
-            font-size: 90%;
-            
+            font-size: 90%;            
         }
     }
 }
@@ -163,8 +164,7 @@
     &__resto{
         font-size: 120%;
         font-weight: bolder;
-        margin-left: -50%;
-        
+        margin-left: -50%;        
     }
 
     &__figure{
@@ -194,7 +194,6 @@
                     color: #06634c;
                     padding:  5px 15px 5px 15px;
                     border-radius: 2px;
-                    animation: anim-nouveau 3s ease-in-out 1s infinite;
                 }
             }
         }
@@ -221,7 +220,7 @@
             }
             i{
                 font-size: 150%;
-                padding-right: 30px;               
+                padding-right: 30px;             
             
             }
             span{
@@ -232,8 +231,6 @@
                     }
                 }
             }
-
-
         }
     }
 }
