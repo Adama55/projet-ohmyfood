@@ -7,12 +7,12 @@
 }
   
 .container{
-    width: 300px;;
+    width: 300px;
     display: flex;
     justify-content: space-evenly;
-    position: relative;
+    position: fixed;
     top: 400px;
-    animation: chargement 4s forwards;
+    animation: chargement 3s forwards;
 
     .bille{
         width: 10px;
@@ -40,15 +40,17 @@
 }
 
 .back-animation{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background-color: $tertiary-color;
-    animation: anim-back 4s ease-in-out forwards;
+    animation: anim-back 3.1s ease-in-out forwards;
 }
 
 .loading-home{
-    animation: accueil-chargement 4s forwards;
+    animation: accueil-chargement 3.1s forwards;
   }
   
   /******/
@@ -234,5 +236,3 @@
         }
     }
 }
-
-
