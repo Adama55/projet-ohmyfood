@@ -1,4 +1,11 @@
-# Projet 3 du parcours developpeur web chez OpenClassrooms: Dynamisez une page web avec des animations CSS
+# ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/Logo_OpenClassrooms.png?raw=true)  Projet 3 du parcours developpeur web chez OpenClassrooms: Dynamisez une page web avec des animations CSS
+
+## Auteur
+
+👤 &nbsp; **FOFANA Adama**
+
+* Conatct : adamadev55@gmail.com
+
 ## Compétences évaluées:
 - [ ] Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 - [ ] Mettre en œuvre des effets CSS graphiques avancés
